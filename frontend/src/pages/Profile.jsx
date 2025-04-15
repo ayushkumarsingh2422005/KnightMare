@@ -86,9 +86,7 @@ const Profile = () => {
 
       {/* Glowing orbs */}
       <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
-      <div className="absolute bottom-1/2 left-1/2 w-32 h-32 bg-pink-600 rounded-full opacity-8 blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1 w-96 h-96 bg-purple-700 rounded-full opacity-8 blur-3xl"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-32 h-32 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
 
       {/* Loading state */}
       <AnimatePresence>
@@ -116,7 +114,14 @@ const Profile = () => {
         {/* <h2 className=" text-xl ml-8 mr-14 p-4 font-extrabold text-white  border-b-2 border-white"></h2> */}
         <ProgressGraph />
         {(!emailofdiffuser) ? (<ProfileSettings />) : ''}
+        {/* Footer */}
+      <div className="w-full py-4 bg-gradient-to-t from-blue-900/70 to-transparent mt-8 md:mt-16 flex items-center justify-center">
+        <p className="text-gray-400 text-xs md:text-sm">
+          © {new Date().getFullYear()} Knightmare Chess - All rights reserved
+        </p>
       </div>
+      </div>
+      
     </>
   );
 };

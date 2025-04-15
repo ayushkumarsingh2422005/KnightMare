@@ -50,14 +50,14 @@ const ProgressGraph = () => {
   const getAvailableYears = () => {
     const years = new Set();
     const now = new Date();
-    years.add(now.getFullYear()); // Always include current year
+    years.add(now.getFullYear());
     
     profile?.ratingHistory?.forEach(entry => {
       const entryYear = new Date(entry.date).getFullYear();
       years.add(entryYear);
     });
     
-    return Array.from(years).sort((a, b) => b - a); // Sort descending (newest first)
+    return Array.from(years).sort((a, b) => b - a);
   };
 
   const availableYears = getAvailableYears();
