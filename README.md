@@ -15,8 +15,6 @@ https://knightmare.onrender.com/
 
 ## 📸 Screenshots
 Home Page
-![Screenshot 2025-04-21 000939](https://github.com/user-attachments/assets/71b329f2-ca6b-40a4-ad4c-3bc0af38ad93)
-
 ![image](https://github.com/user-attachments/assets/c208a250-8a26-40e6-9c04-4376205f806c)
 ![image](https://github.com/user-attachments/assets/60a36094-632d-48a7-8b36-00ba3cc258a5)
 ![Screenshot 2025-04-21 001040](https://github.com/user-attachments/assets/6e68e174-a938-48ba-bfa4-ec95019ecb9e)
