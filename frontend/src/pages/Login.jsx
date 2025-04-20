@@ -89,7 +89,6 @@ const Login = () => {
       className="min-h-screen flex justify-center items-center bg-cover bg-center"
       style={{ backgroundImage: "url('chessfloor2.jpg')" }}
     >
-      {/* Semi-transparent overlay */}
       <div className="absolute inset-0 "></div>
       
       <div className="relative z-10 w-full max-w-md px-4">

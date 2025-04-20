@@ -23,19 +23,19 @@ const Home = () => {
       style={{ backgroundImage: "url('/bgchess5.jpg')" }}
     >
       {/* Overlay to enhance text readability if needed */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
       
       {/* Main content */}
       <div className="relative z-10 px-4 w-fit max-w-md">
-        <div className="text-center backdrop-blur-sm rounded-lg mb-8">
-          <h1 className="text-5xl font-bold text-white mb-2">
+        <div className="text-center rounded-lg mb-8">
+          <h1 className="text-6xl font-bold text-white mb-2">
             <span className="text-white">Knight</span>
-            <span className="text-blue-400">Mare</span>
+            <span className="text-amber-500">Mare</span>
           </h1>
-          <p className="text-lg text-gray-200 italic">Master the board. Challenge yourself.</p>
+          <p className="text-lg font-bold text-gray-200 italic">Master the board. Challenge yourself.</p>
         </div>
 
-        <div className="bg-gray-800/70 p-8 rounded-xl backdrop-blur-sm border border-gray-700 shadow-2xl">
+        <div className="bg-gray-950/60 p-8 rounded-xl backdrop-blur-sm border border-gray-700 shadow-2xl">
           <div className="mb-6 text-center">
             <p className="text-gray-200 text-lg mb-6">
               Enhance your chess skills by playing against AI opponents and track your progress as you improve.
@@ -43,15 +43,15 @@ const Home = () => {
             
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center p-3 bg-gray-900/50 rounded-lg">
-                <div className="text-blue-400 text-2xl font-bold">Play</div>
-                <div className="text-gray-300 text-sm">Challenge AI</div>
+                <div className="text-amber-500 text-2xl font-bold">Play</div>
+                <div className="text-gray-300 text-sm">against AI</div>
               </div>
               <div className="text-center p-3 bg-gray-900/50 rounded-lg">
-                <div className="text-blue-400 text-2xl font-bold">Learn</div>
-                <div className="text-gray-300 text-sm">Improve Skills</div>
+                <div className="text-amber-500 text-2xl font-bold">Learn</div>
+                <div className="text-gray-300 text-sm">and improve Skills</div>
               </div>
               <div className="text-center p-3 bg-gray-900/50 rounded-lg">
-                <div className="text-blue-400 text-2xl font-bold">Track</div>
+                <div className="text-amber-500 text-2xl font-bold">Track</div>
                 <div className="text-gray-300 text-sm">Your Progress</div>
               </div>
             </div>
@@ -65,7 +65,7 @@ const Home = () => {
               Login
             </Link>
             <div className="text-center text-gray-200">
-              Don't have an account? <Link to="/register" className="text-blue-400 font-bold hover:text-blue-300 transition-colors">Sign Up</Link>
+              Don't have an account? <Link to="/register" className="text-amber-500 font-bold hover:text-blue-300 transition-colors">Sign Up</Link>
             </div>
           </div>
         </div>
