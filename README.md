@@ -15,21 +15,24 @@ https://knightmare.onrender.com/
 
 ## 📸 Screenshots
 Home Page
-![Screenshot 2025-04-08 095017](https://github.com/user-attachments/assets/53c00d4e-5d54-421f-a514-69087647d818)
-User Login/Signup
-![Screenshot 2025-04-08 095035](https://github.com/user-attachments/assets/991cf0a4-9cdf-4b18-996c-72b0d234c62d)
-![Screenshot 2025-04-08 095221](https://github.com/user-attachments/assets/4ae6b363-c5f0-4e7b-bcbd-118b4c112b1d)
-![Screenshot 2025-04-08 095233](https://github.com/user-attachments/assets/3774d070-fe28-48d3-900b-ba2d6871b334)
-![Screenshot 2025-04-08 095257](https://github.com/user-attachments/assets/48c48094-f219-4de4-8277-61d8f4b7af54)
-![Screenshot 2025-04-08 095305](https://github.com/user-attachments/assets/5b11d648-1d4d-4b9b-85ac-f29c4f01a81f)
-![Screenshot 2025-04-08 095316](https://github.com/user-attachments/assets/bd7a2617-be39-4324-a7cb-f5248ce35a49)
-![Screenshot 2025-04-08 095336](https://github.com/user-attachments/assets/612c215c-902f-443b-87aa-34905a475457)
-![Screenshot 2025-04-08 095518](https://github.com/user-attachments/assets/b6366836-eea7-4aa0-b3cc-c72fee6f68ec)
-![Screenshot 2025-04-08 095532](https://github.com/user-attachments/assets/d241384a-d756-4adf-968e-680d00a5c7b1)
-![Screenshot 2025-04-08 095547](https://github.com/user-attachments/assets/eac7c0d5-4dea-4cfa-95c4-f83a6fb598fb)
-![Screenshot 2025-04-08 095700](https://github.com/user-attachments/assets/2bc91709-3357-4c5a-bec3-083466b4089d)
-![Screenshot 2025-04-08 095719](https://github.com/user-attachments/assets/d11cd7a9-ff58-4e3e-a1d6-8b57a53fa215)
-![Screenshot 2025-04-08 095728](https://github.com/user-attachments/assets/43a5b852-15af-47fd-ad60-8269ec74a517)
+![Screenshot 2025-04-21 000939](https://github.com/user-attachments/assets/71b329f2-ca6b-40a4-ad4c-3bc0af38ad93)
+
+![image](https://github.com/user-attachments/assets/c208a250-8a26-40e6-9c04-4376205f806c)
+![image](https://github.com/user-attachments/assets/60a36094-632d-48a7-8b36-00ba3cc258a5)
+![Screenshot 2025-04-21 001040](https://github.com/user-attachments/assets/6e68e174-a938-48ba-bfa4-ec95019ecb9e)
+![Screenshot 2025-04-21 001010](https://github.com/user-attachments/assets/74a01baf-c47e-45c6-95e3-ed110d4d2406)
+![Screenshot 2025-04-21 001019](https://github.com/user-attachments/assets/f85470d4-85ac-42f6-8739-0c91f7017568)
+![Screenshot 2025-04-21 001030](https://github.com/user-attachments/assets/7435efd7-c3c8-4a87-ac6e-e877442c0674)
+
+![Screenshot 2025-04-21 001135](https://github.com/user-attachments/assets/2bc2c919-8261-4459-8390-9aea4bf65876)
+![Screenshot 2025-04-21 001214](https://github.com/user-attachments/assets/349f605e-50ff-415c-bcaf-e4692f927ee1)
+![Screenshot 2025-04-21 001059](https://github.com/user-attachments/assets/a29f918e-5617-402a-b581-7869d82c5d87)
+![Screenshot 2025-04-21 001111](https://github.com/user-attachments/assets/e2814980-0c28-48c2-89bc-da289a290ed1)
+![Screenshot 2025-04-21 001124](https://github.com/user-attachments/assets/a62ae6a7-7ff9-4470-8af3-7441b8519272)
+
+
+
+
 
 ## ✨ Future Enhancements
 
