@@ -163,12 +163,6 @@ const RulesPage = () => {
           >
             Resignation
           </button>
-          <button
-            onClick={() => setActiveTab("team")}
-            className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium ${activeTab === "team" ? "text-blue-400 border-b-2 border-blue-400" : "text-gray-400 hover:text-white"}`}
-          >
-            The Team
-          </button>
         </motion.div>
 
         {/* Tab Content */}
