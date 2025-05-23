@@ -293,52 +293,6 @@ const RulesPage = () => {
             </motion.div>
           )}
 
-          {/* Team */}
-          {activeTab === "team" && (
-            <motion.div variants={fadeIn}>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-blue-400">The Development Team</h2>
-              <p className="text-blue-200 mb-6 md:mb-8 italic text-center">
-                "Dedicated to creating the ultimate chess experience"
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                {teamMembers.map((member, index) => (
-                  <motion.div 
-                    key={index}
-                    variants={fadeIn}
-                    whileHover={{ scale: 1.03 }}
-                    className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-md  hover:shadow-blue-400 transition-all"
-                  >
-                    <div className="p-4 md:p-6">
-                      <div className="flex items-center mb-3 md:mb-4">
-                        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gray-700 flex items-center justify-center text-xl md:text-2xl font-bold text-blue-300">
-                          {member.name.charAt(0)}
-                        </div>
-                        <div className="ml-3 md:ml-4">
-                          <h3 className="text-base md:text-lg font-bold text-white">{member.name}</h3>
-                          <p className="text-blue-400 text-sm md:text-base">{member.role}</p>
-                        </div>
-                      </div>
-                      <p className="text-gray-400 italic text-sm md:text-base">"{member.specialty}"</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              <motion.div 
-                variants={fadeIn}
-                className="mt-8 md:mt-12 p-4 md:p-6 bg-gray-900 rounded-lg border border-gray-800 text-center"
-              >
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Join Our Team</h3>
-                <p className="text-gray-400 mb-3 md:mb-4 text-sm md:text-base">
-                  Interested in contributing to Knightmare Chess?
-                </p>
-                <button onClick={()=>{navigate('/contact')}} className="px-4 py-2 md:px-6 md:py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition-colors text-sm md:text-base">
-                  Contact Us
-                </button>
-              </motion.div>
-            </motion.div>
-          )}
         </motion.div>
 
         {/* Animated Chess Pieces (Mobile Hidden) */}
