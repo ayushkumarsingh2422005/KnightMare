@@ -8,17 +8,15 @@ import { GoogleLogin } from "@react-oauth/google";
 import { assets } from "../assets/assets";
 
 const Register = () => {
-  const { setToken, setUser, setShowNavbar, backendUrl } = useContext(commoncontext);
+  const { setToken, setUser, backendUrl, setShowNavbar } = useContext(commoncontext);
   const navigate = useNavigate();
+  setShowNavbar(true);
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
   });
-
-  useEffect(() => {
-    setShowNavbar(true);
-  }, [setShowNavbar]);
 
   const handleGoogleSuccess = async (response) => {
     const googleToken = response.credential;
@@ -91,18 +89,17 @@ const Register = () => {
       style={{ backgroundImage: "url('chessfloor2.jpg')" }}
     >
       <div className="absolute inset-0"></div>
-
       <div className="relative z-10 w-full max-w-md px-4">
-        <div className="backdrop-blur-md p-6 rounded-xl shadow-2xl">
+        <div className=" backdrop-blur-md p-6 rounded-xl shadow-2xl">
           <div className="flex justify-center mb-1">
             <div className="w-16 h-16 flex items-center justify-center bg-black rounded-full">
               <img src={assets.logo} alt="register"/>
             </div>
           </div>
-
+          
           <h2 className="text-2xl font-semibold text-center text-blue-400">Create Account</h2>
-          <p className="text-gray-400 text-sm text-center mb-4">Sign up to get started with KnightMare</p>
-
+          <p className="text-gray-400 text-sm text-center mb-4">Join us to begin your chess journey</p>
+          
           <form className="space-y-3" onSubmit={handleRegister}>
             <div>
               <label className="text-sm text-gray-300 block mb-1">Username</label>
@@ -111,11 +108,11 @@ const Register = () => {
                 name="username"
                 value={formData.username}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none text-white"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-400 text-white"
                 placeholder="Choose a username"
               />
             </div>
-
+            
             <div>
               <label className="text-sm text-gray-300 block mb-1">Email</label>
               <input
@@ -123,11 +120,11 @@ const Register = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none text-white"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-400 text-white"
                 placeholder="Enter your email"
               />
             </div>
-
+            
             <div>
               <label className="text-sm text-gray-300 block mb-1">Password</label>
               <input
@@ -135,25 +132,25 @@ const Register = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none text-white"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-400 text-white"
                 placeholder="Create a password"
               />
             </div>
-
+            
             <button
               type="submit"
-              className="w-full py-2 bg-black hover:bg-gray-900 rounded-lg text-white font-semibold transition duration-300 border border-gray-700"
+              className="w-full py-2 bg-black hover:bg-gray-900 rounded-lg text-white font-semibold transition duration-300 border border-gray-700 hover:border-blue-400"
             >
-              Create Account
+              Register
             </button>
           </form>
-
+          
           <div className="mt-6 flex items-center">
             <div className="flex-grow h-px bg-gray-700"></div>
             <p className="mx-4 text-gray-400">OR</p>
             <div className="flex-grow h-px bg-gray-700"></div>
           </div>
-
+          
           <div className="mt-6 flex justify-center">
             <GoogleLogin
               onSuccess={handleGoogleSuccess}
@@ -166,12 +163,12 @@ const Register = () => {
               width="100%"
             />
           </div>
-
+          
           <p className="text-center text-gray-300 mt-6">
             Already have an account?{" "}
-            <span
-              className="text-blue-400 hover:text-blue-300 cursor-pointer font-medium"
-              onClick={() => navigate("/login")}
+            <span 
+              className="text-blue-400 hover:text-blue-300 cursor-pointer font-medium" 
+              onClick={() => navigate('/login')}
             >
               Sign in
             </span>
