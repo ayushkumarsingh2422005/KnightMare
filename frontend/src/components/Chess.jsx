@@ -481,7 +481,7 @@ function Chess(){
 
 
   return (
-    <div className="chess-container p-2  bg-gray-900 text-white">
+    <div className="chess-container p-2   text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         <div className="md:col-span-2">
           <div className="flex justify-between items-center relative z-10 bg-gray-800 rounded-lg p-1">

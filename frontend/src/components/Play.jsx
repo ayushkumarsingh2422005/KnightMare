@@ -68,19 +68,26 @@ const Play = () => {
   ];
 
   return (
+    <>
+     <div className="bg-gray-950 min-h-screen text-white font-sans">
+       <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute inset-0 bg-[length:80px_80px] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)]"></div>
+      </div>
     <motion.div 
-      className="bg-gray-950 min-h-screen text-white font-sans relative overflow-hidden"
+      className="bg-gray-950 min-h-screen text-white font-sans "
       initial="initial"
       animate="animate"
       exit="exit"
       variants={pageVariants}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-blue-950"></div>
+  
       
-      {/* Grid overlay */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
+      {/* Grid overlay
+      <div className="absolute   inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 bg-[length:50px_50px] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)]"></div>
-      </div>
+      </div> */}
+
+      
 
       {/* Chess pieces decoration */}
       {chessPieces.map((piece, index) => (
@@ -157,15 +164,16 @@ const Play = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
-                  className="text-4xl h-15 md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-400 to-purple-400"
+                  className="text-3xl h-15 md:text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-400 to-purple-400"
                 >
                   Configure Your Match
                 </motion.h1>
+                
                 <motion.div 
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
-                  className="h-1 w-24 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6"
+                  className="h-0 w-24 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6"
                 />
               </div>
               <GameSetup />
@@ -188,6 +196,13 @@ const Play = () => {
 
      
     </motion.div>
+     <div className="w-full py-4 bg-gradient-to-t from-blue-900/70 to-transparent mt-8 md:mt-16 flex items-center justify-center">
+     <p className="text-gray-400 text-xs md:text-sm">
+       © {new Date().getFullYear()} Knightmare Chess - All rights reserved
+     </p>
+   </div>
+   </div>
+  </>
     
   );
 };

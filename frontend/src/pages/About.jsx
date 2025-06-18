@@ -130,7 +130,7 @@ const RulesPage = () => {
           transition={{ duration: 1, type: "spring" }}
           className="text-center mb-8 md:mb-16"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-gray-800">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">
             KNIGHTMARE CHESS
           </h1>
           <p className="text-lg md:text-xl text-blue-200 italic">

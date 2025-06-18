@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -35,16 +35,19 @@ const Register = () => {
       localStorage.setItem('user', data.user);
       setUser(data.user);
       if (res.ok) {
+        toast.success("Login successful!");
         navigate('/');
       } else {
-        console.error('Error during Google Login:', data.message);
+        toast.error(data.message || "Google login failed");
       }
     } catch (error) {
+      toast.error("Google Login API Error");
       console.error('Google Login API Error:', error);
     }
   };
 
   const handleGoogleFailure = (error) => {
+    toast.error("Google Login Failed");
     console.error('Google Login Error:', error);
   };
 
@@ -83,7 +86,7 @@ const Register = () => {
   return (
     <div
       className="min-h-screen flex justify-center items-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/chessfloor2.jpg')" }}
+      style={{ backgroundImage: "url('chessfloor2.jpg')" }}
     >
       <div className="absolute inset-0"></div>
       <div className="relative z-10 w-full max-w-md px-4">

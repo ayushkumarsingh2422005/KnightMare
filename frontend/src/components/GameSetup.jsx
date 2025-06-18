@@ -32,7 +32,7 @@ function GameSetup() {
     <div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col bg-gray-800  mt-15 space-y-4  p-6 rounded-lg shadow-lg shadow-black"
+        className="flex flex-col bg-gray-800  mt-8 space-y-4  p-6 rounded-lg shadow-lg shadow-black"
       >
         <h2 className="text-3xl  font-bold  text-white mb-4">Game Setup</h2>
         <div className="flex flex-col space-y-2">
@@ -55,11 +55,7 @@ function GameSetup() {
         </button>
       </form>
        {/* Footer */}
-     <div className="absolute bottom-0 left-0 w-full py-4 bg-gradient-to-t from-blue-900/50 to-transparent flex items-center justify-center">
-     <p className="text-gray-400 text-xs md:text-sm">
-       © {new Date().getFullYear()} Knightmare Chess - All rights reserved
-     </p>
-   </div>
+   
     </div>
     
    

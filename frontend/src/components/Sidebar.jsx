@@ -26,7 +26,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`hidden md:block bg-black shadow-xl transition-all duration-300 ease-in-out ${
+      className={`hidden md:block bg-black relative z-10 shadow-xl transition-all duration-300 ease-in-out ${
         isExpanded ? "w-56" : "w-16"
       }`}
       onMouseEnter={() => setIsExpanded(true)}
