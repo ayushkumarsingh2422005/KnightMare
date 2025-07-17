@@ -82,14 +82,13 @@ const Leaderboard = () => {
         }
       });
       setLeaderboard(response.data.data);
-      console.log(response.data.data);
       setPagination({
         ...pagination,
         totalUsers: response.data.pagination.totalUsers,
         totalPages: response.data.pagination.totalPages
       });
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to fetch leaderboard');
+      setError(err.response?.data?.message || 'Login again to view leaderboard ! session expired');
     } finally {
       setLoading(false);
     }
